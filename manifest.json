@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Support forum colors",
+  "author": "Francesco Frassinelli",
+  "version": "0.3.0",
+  "description": "Add background colors to (un)solved issues (FluxBB, PhpBB and vBulletin).",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/viewforum.php*",
+        "*://*/search.php*",
+        "*://*/forumdisplay.php*",
+        "*://*/*/viewforum.php*",
+        "*://*/*/search.php*",
+        "*://*/*/forumdisplay.php*"
+      ],
+      "js": ["support-forum-colors.js"]
+    }
+  ]
+}
